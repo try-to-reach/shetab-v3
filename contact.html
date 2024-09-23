@@ -81,8 +81,23 @@
             font-weight: bold;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
+        .contact-card .a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: #fff;
+            color: rgb(150, 11, 11);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
         .contact-card a:hover {
+            background-color: rgb(150, 11, 11);
+            color: #fff;
+        }
+        .contact-card .a:hover {
             background-color: rgb(150, 11, 11);
             color: #fff;
         }
@@ -127,13 +142,25 @@
     <!-- Local Stylesheets -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 18595515;
+        window.__lc.integration_name = "manual_onboarding";
+        window.__lc.product_name = "livechat";
+        (function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice));
+    </script>
+    <script>
+        function openChat() {
+            LiveChatWidget.call('maximize');
+        }
+    </script>
 </head>
 
 <body>
     <header class="responsive-header ">
         <nav class="navbar">
             <div class="contact-btn">
-                <a href="/contact" class="btn">ارتباط با ما</a>
+                <a href="/contact.html" class="btn">ارتباط با ما</a>
             </div>
             <ul class="menu">
                 <li><a href="./about.html">درباره ما</a></li>
@@ -175,24 +202,24 @@ margin: 0px;
 
     <div class="contact-container">
         <div class="contact-card">
-            <img src="https://via.placeholder.com/50" alt="چت زنده">
+            <img src="./images/online-live-chat.png" alt="چت زنده">
             <h3>چت زنده با ما داشته باشید.</h3>
-            <a href="#">شروع چت زنده</a>
+            <div onclick="openChat()" class="a">شروع چت زنده</div>
         </div>
         <div class="contact-card">
-            <img src="https://via.placeholder.com/50" alt="ارسال درخواست">
-            <h3>یک درخواست برای ما ارسال کنید.</h3>
-            <a href="#">ارسال درخواست</a>
+            <img src="./images/gmail.png" alt="ارسال ایمیل">
+            <h3>به ما ایمیل ارسال کنید</h3>
+            <a href="mailto:sasanrahmati81@gmail.com">ارسال ایمیل</a>
         </div>
         <div class="contact-card">
-            <img src="https://via.placeholder.com/50" alt="پیامک">
-            <h3>به ما پیامک بزنید.</h3>
-            <a href="#">ارسال پیامک</a>
+            <i class="fas fa-phone fa-2x" style="color: #fff; margin-bottom: 15px;"></i>
+            <h3>با ما تماس بگیرید</h3>
+            <a href="tel:+989132478664">تماس گرفتن</a>
         </div>
         <div class="contact-card">
-            <img src="https://via.placeholder.com/50" alt="شبکه‌های اجتماعی">
-            <h3>در شبکه‌های اجتماعی با ما در ارتباط باشید.</h3>
-            <a href="#">توییتر/فیسبوک</a>
+            <i class="fab fa-telegram fa-2x" style="color: #0088cc; margin-bottom: 15px; background-color: #fff; border-radius: 60%;"></i>
+            <h3>تلگرام </h3>
+            <a href="#">ارسال پیام</a>
         </div>
     </div>
     <footer style="border-top: 4px solid rgb(150, 11, 11);">
@@ -241,6 +268,17 @@ margin: 0px;
         </p>
         <a href="https://t.me/alirezan5555" target="_blank" rel="noopener" title="تماس با طراح سایت">@alireza</a>
     </div>
+    <!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 18595515;
+    window.__lc.integration_name = "manual_onboarding";
+    window.__lc.product_name = "livechat";
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/18595515/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+
 </body>
 
 </html>
